@@ -1,0 +1,115 @@
+$black: #101010;
+$gray-blue: #707890;
+$text: #C9D3E7;
+// Border radius
+$global-radius: 3px;
+
+// Transition
+$global-transition: .35s;
+
+// // Links
+// $link-color: $primary-color;
+// $link-color-hover: lighten($link-color, 15%);
+
+// // Images
+// img {
+//   max-width: 100%;
+//   height: auto;
+//   vertical-align: middle;
+//   &+em {
+//     text-align: center;
+//     display: block;
+//     margin-top: 10px;
+//     font-weight: normal;
+//     font-size: 16px;
+//     color: $gray-blue;
+//   }
+// }
+
+
+// // Links
+// a {
+//     text-decoration: none;
+//     color: $link-color;
+//     transition: $global-transition;
+
+//     &:hover {
+//         color: $link-color-hover;
+//     }
+// }
+
+.imgbox {
+  // display: flex;
+  margin-bottom: 25px;
+  position:relative;
+  &:hover {
+    // img {
+      .image-overlay-text {
+        opacity: 1;
+        // width: 100%;
+      }
+    // }
+    // img {
+      .image-overlay {
+        opacity: .5;
+        width: 100%;
+      }
+    // }
+  }
+  .box {
+    padding-bottom: 20px;
+    border-bottom: 2px solid $border-color;
+  }
+  .article-head {
+    background: $black;
+  }
+  // .image {
+  img {
+    width: 100%;
+    // height: auto;
+    // max-height: 200px;
+    // object-fit: cover;
+    overflow: hidden;
+
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $black;
+    box-shadow: 0 9px 18px 0 rgba(0, 0, 0, .25);
+    &:before {
+      content: "";
+      display: table;
+      padding-top: 75%;
+    }
+    
+  }
+
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+  .image-overlay-text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    // font-size: 110px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: $text;
+    transform: translate(-50%,-50%);
+    transition: all 0.4s ease;
+    opacity: 0;
+  }
+}

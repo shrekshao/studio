@@ -1,0 +1,20 @@
+<div class="column col-12 text-center mt-16">
+  <!-- <h4>{{ game.name }}</h4> -->
+</div>
+<div class="imgbox column col-4 col-sm-12 p-8 mb-8 col-mx-auto">
+  
+  <div class="imgbox">
+    <img src="{{site.baseurl | append:game.title-img }}" />
+    <a href="{{ site.baseurl | game.url }}" class="image-overlay">
+        <span class="image-overlay-text">{{game.name}}</span>
+    </a>
+  </div>
+
+</div>
+
+
+<div class="column col-4 col-sm-12 p-8 mb-8 col-mx-auto">
+  <h5>{{ game.name }}</h5>
+  <p>{{ game.description | newline_to_br }}</p>
+  <a href="{{ site.help_two_link }}" target="_blank">{{ site.help_two_button}} <i class='uil uil-arrow-right arrow-hover'></i></a>
+</div>

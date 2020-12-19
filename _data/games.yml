@@ -1,0 +1,11 @@
+encounter:
+  name: 相遇和分别
+  description: |
+    多人物RPG
+    啦啦啦
+    多行测试
+  title-img: assets/encounter/title.jpg
+college-soccer:
+  name: 大学足球院队
+  description: |
+    回合制足球策略游戏+大学院队经营养成
