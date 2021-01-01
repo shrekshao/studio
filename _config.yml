@@ -32,7 +32,8 @@ brand_name: shrekshao
 header: 狄克和怀老板的游戏工作室
 subheader: 情怀党
 
-meta_image: odin-meta.png
+# meta_image: odin-meta.png
+meta_image: encounter/title.jpg
 
 # Social Links
 twitter_username: shrekshao
@@ -55,17 +56,6 @@ nav_item_three_link: #
 
 nav_button: Return to Odin Home
 nav_button_link: https://teaguns.github.io/odin/
-
-# More Help
-help_one_title: Odin Bugs
-help_one_content: If you find any bugs or problems with this theme, please open an issue over on Github.
-help_one_button: Github
-help_one_link: https://github.com/TeaGuns/odin/issues
-
-help_two_title: Twitter
-help_two_content: Feel free to tweet at me if you have suggestions for Odin. Or if you just want to say hi.
-help_two_button: Twitter
-help_two_link: https://twitter.com/theteaguns
 
 # Build settings
 theme: minima
