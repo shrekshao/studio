@@ -16,7 +16,7 @@
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }} | {{ site.tagline }}
+      {{ site.title }}
     {% else %}
       {{ page.title }} | {{ site.title }}
     {% endif %}
@@ -34,5 +34,5 @@
   <link rel="shortcut icon" href="{{ site.url }}{{ site.baseurl }}/public/favicon.ico">
 
   <!-- RSS -->
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}atom.xml">
+  <!-- <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}atom.xml"> -->
 </head>

@@ -1,4 +1,4 @@
-<div class="column col-12 col-sm-12 mt-16" style="display: flex">
+<div class="column col-12 col-sm-12 mt-16" style="display: flex;">
 
 <!-- <div class="column col-12 text-center mt-16">
   <h4>{{ game.name }}</h4>
@@ -25,7 +25,13 @@
     {% for post in site.categories[key] %}
     <div class="imgbox" style="max-width: 150px">
       <img src="{{ site.baseurl | append:post.img }}"/>
+      <!-- <a href="{{ post.url }}" class="image-overlay"> -->
+
+      {% if post.direct-link %}
+      <a href="{{ post.direct-link }}" class="image-overlay"></a>
+      {% else %}
       <a href="{{ post.url }}" class="image-overlay">
+      {% endif %}
           <span class="image-overlay-text">{{post.title}}</span>
       </a>
     </div>

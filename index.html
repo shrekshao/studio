@@ -7,11 +7,11 @@ title: Home
   {% include header-home.html %}
     <div class="container-full">
       <div class="container grid-xl">
-        <div class="columns negative-m-s">
-          <div class="column col-12 text-center">
+        <!-- <div class="columns negative-m-s"> -->
+        <div class="columns">
+          <!-- <div class="column col-12 text-center">
             <h6 class="text-secondary">Select a Category</h6>
           </div>
-
           {% for category in site.data.category_list %}
           {% capture category_name %}{{ category | first }}{% endcapture %}
           {% assign page_category = site.data.category_list[category_name] %}
@@ -30,8 +30,9 @@ title: Home
               </div>
             </a>
           </div>
-          {% endfor %}
+          {% endfor %} -->
 
+          <!-- game sections, one for each title -->
           {% for item in site.data.games %}
             {% capture key %}{{ item | first }}{% endcapture %}
             {% assign game = site.data.games[key] %}
