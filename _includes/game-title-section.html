@@ -21,11 +21,21 @@
   <p>{{ game.description | newline_to_br }}</p>
   <!-- <a href="{{ site.help_two_link }}" target="_blank">{{ site.help_two_button}} <i class='uil uil-arrow-right arrow-hover'></i></a> -->
 
+  {% assign blogs = include.game_posts | where: "tag", "blog" %}
+    {% for post in blogs %}
+    <div class="blog-link-short">
+      <a href="{{post.url}}">
+        {{ post.title }} {{ post.date | date: "%Y-%m-%d" }}
+      </a>
+    </div>
+    {% endfor %}
+    <br/>
+
   <div class="columns collections">
-    {% for post in site.categories[key] %}
+    {% assign video_links = include.game_posts | where: "tag", "video" %}
+    {% for post in video_links %}
     <div class="imgbox" style="max-width: 150px">
       <img src="{{ site.baseurl | append:post.img }}"/>
-      <!-- <a href="{{ post.url }}" class="image-overlay"> -->
 
       {% if post.direct-link %}
       <a href="{{ post.direct-link }}" class="image-overlay"></a>

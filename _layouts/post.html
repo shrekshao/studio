@@ -15,20 +15,17 @@ layout: default
         <div class="column col-12">
           <ul class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="{{ site.url }}{{ site.baseurl }}">Help Center Home</a>
+              <a href="{{ site.url }}{{ site.baseurl }}">主页</a>
             </li>
-            <li class="breadcrumb-item">
-              <a href="../{{ page.category }}">{{ page_category.name }}</a>
-            </li>
-            <li class="breadcrumb-item">
+            <!-- <li class="breadcrumb-item">
               <a href="#">{{ page.title }}</a>
-            </li>
+            </li> -->
           </ul>
           <h2 class="text-light text-bold">{{ page.title }}</h2>
           <p class="text-light mb-0">{{ page.short-description }}</p>
         </div>
         <div class="column col-12">
-          <div class="card">
+          <div class="card" style="min-height: 400px">
             <div class="card-body">
                 {% if site.use_authors == true %}
                 {% assign post_author = site.data.authors[page.author] %}
@@ -44,10 +41,11 @@ layout: default
                 {% else %}
                 <div class="ml-2">
                     <p class="m-0 text-small">Last updated:</p>
-                    <p class="text-dark text-small text-italic mb-0">{{ page.last_modified_at | date: '%B %d, %Y'  }} - {% include reading-time.html %}</p>
+                    <p class="text-dark text-small text-italic mb-0">{{ page.last_modified_at | date: '%B %d, %Y'  }}</p>
                   </div>
                 {% endif %}
 
+              <br/>
               {{ content }}
 
               

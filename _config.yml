@@ -20,7 +20,7 @@
 
 title: shrekshao游戏工作室
 description: 做游戏
-baseurl: / # the subpath of your site, e.g. /support
+baseurl: "" # the subpath of your site, e.g. /support
 url: https://shrekshao.com/ # the base hostname AND PROTOCOL for your site, e.g. http://example.com
 # baseurl: /studio/ # the subpath of your site, e.g. /support
 # url: https://shrekshao.github.io/ # the base hostname AND PROTOCOL for your site, e.g. http://example.com
