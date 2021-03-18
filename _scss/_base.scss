@@ -36,3 +36,20 @@ a {
     text-decoration: none;
   }
 }
+
+.blog-link-short a {
+  color: #8f8f8f;
+  font-weight: normal;
+
+  .date {
+    color: #a3a3a3;
+    font-weight: lighter;
+  }
+
+
+  &:hover {
+    color: $link-color-dark;
+    // transition: all 0.2s ease;
+    // -webkit-transition: all 0.2s ease;
+  }
+}

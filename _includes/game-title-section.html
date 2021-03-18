@@ -1,4 +1,4 @@
-<div class="column col-12 col-sm-12 mt-16" style="display: flex;">
+<div class="columns col-12 col-sm-12 mt-16" style="display: flex;">
 
 <!-- <div class="column col-12 text-center mt-16">
   <h4>{{ game.name }}</h4>
@@ -25,7 +25,9 @@
     {% for post in blogs %}
     <div class="blog-link-short">
       <a href="{{post.url}}">
-        {{ post.title }} {{ post.date | date: "%Y-%m-%d" }}
+        <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        {{ post.title }}
       </a>
     </div>
     {% endfor %}
@@ -40,10 +42,9 @@
       {% if post.direct-link %}
       <a href="{{ post.direct-link }}" class="image-overlay"></a>
       {% else %}
-      <a href="{{ post.url }}" class="image-overlay">
+      <a href="{{ post.url }}" class="image-overlay"></a>
       {% endif %}
-          <span class="image-overlay-text">{{post.title}}</span>
-      </a>
+      <span href="{{ post.direct-link }}" class="image-overlay-text">{{post.title}}</span>
     </div>
     {% endfor %}
   </div>
