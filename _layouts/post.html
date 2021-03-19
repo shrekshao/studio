@@ -16,10 +16,10 @@ layout: default
         <div class="column col-12">
           <ul class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="{{ site.url }}{{ site.baseurl }}">主页</a>
+              <a href="{{ '' | absolute_url }}">主页</a>
             </li>
             <li class="breadcrumb-item">
-              <a href="#">{{ game_name }}</a>
+              <a href="{{ page_cat | absolute_url }}">{{ game_name }}</a>
             </li>
           </ul>
           <h2 class="text-light text-bold">{{ page.title }}</h2>
@@ -41,8 +41,8 @@ layout: default
                 </div>
                 {% else %}
                 <div class="ml-2">
-                    <p class="m-0 text-small">最后更新于：</p>
-                    <p class="text-dark text-small text-italic mb-0">{{ page.last_modified_at | date: "%Y-%m-%d"  }}</p>
+                    <!-- <p class="m-0 text-small">最后更新于：</p> -->
+                    <p class="text-dark text-small text-italic mb-0">{{ page.date | date: "%Y-%m-%d"  }}</p>
                   </div>
                 {% endif %}
 

@@ -11,11 +11,10 @@ title: Home
         <div class="columns">
 
           <!-- game sections, one for each title -->
-          {% for item in site.data.games %}
-            {% capture key %}{{ item | first }}{% endcapture %}
-            {% assign game = site.data.games[key] %}
+          {% for item in site.games reversed %}
+            {% assign key = item.key %}
             {% assign game_posts = site.categories[key] %}
-            {% include game-title-section.html key=key game=game game_posts=game_posts %}
+            {% include game-title-section.html key=key game=item game_posts=game_posts %}
           {% endfor %}
 
           <!-- {% include more-help.html %} -->

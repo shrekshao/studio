@@ -7,9 +7,9 @@
 <div class="column col-4 col-sm-12 p-8 mb-8 col-mx-auto">
   
   <div class="imgbox">
-    <img src="{{site.baseurl | append:game.title-img }}" />
-    <a href="{{ site.baseurl | game.url }}" class="image-overlay">
-        <span class="image-overlay-text">{{game.name}}</span>
+    <img src="{{site.baseurl | append: include.game.title-img }}" />
+    <a href="{{ include.key | absolute_url }}" class="image-overlay">
+        <span class="image-overlay-text">{{include.game.title}}</span>
     </a>
   </div>
 
@@ -17,9 +17,8 @@
 
 
 <div class="column col-6 col-sm-12 p-8 mb-8 col-mx-auto">
-  <h5>{{ game.name }}</h5>
-  <p>{{ game.description | newline_to_br }}</p>
-  <!-- <a href="{{ site.help_two_link }}" target="_blank">{{ site.help_two_button}} <i class='uil uil-arrow-right arrow-hover'></i></a> -->
+  <a href="{{ include.key | absolute_url }}"><h5>{{ include.game.title }}</h5></a>
+  <p>{{ include.game.description | newline_to_br }}</p>
 
   {% assign blogs = include.game_posts | where: "tag", "blog" %}
     {% for post in blogs %}

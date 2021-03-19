@@ -63,7 +63,6 @@ nav_button_link: https://teaguns.github.io/odin/
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-last-modified-at
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -78,3 +77,10 @@ plugins:
 sass:
   sass_dir:          _scss
   style:            :compressed
+
+excerpt_separator: <!--more-->
+
+collections:
+  games:
+    output: true
+    permalink: /:name
