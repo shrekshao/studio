@@ -5,7 +5,9 @@ layout: default
 {% include header.html %}
 
 {% assign page_cat = page.categories[0] %}
-{% assign game_name = site.data.games[page_cat].name %}
+
+{% assign c = site.games | where: "key", page_cat | first %}
+{% assign game_name = c.title %}
 
 
 <div class="container-full">
@@ -45,7 +47,6 @@ layout: default
                     <p class="text-dark text-small text-italic mb-0">{{ page.date | date: "%Y-%m-%d"  }}</p>
                   </div>
                 {% endif %}
-
               <br/>
               {{ content }}
 
