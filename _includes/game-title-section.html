@@ -22,11 +22,16 @@
 
   {% assign blogs = include.game_posts | where: "tag", "blog" %}
     {% for post in blogs %}
+    {% if forloop.index >= 4 %}
+    <div class="blog-link-more">
+      <a href="{{ include.key | absolute_url }}">更多...</a>
+    </div>
+    {% break %}
+    {% endif %}
     <div class="blog-link-short">
       <a href="{{post.url}}">
+        <span>{{ post.title }}</span>
         <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        {{ post.title }}
       </a>
     </div>
     {% endfor %}

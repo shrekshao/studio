@@ -44,6 +44,7 @@ a {
   .date {
     color: #a3a3a3;
     font-weight: lighter;
+    float: right;
   }
 
 
@@ -52,4 +53,14 @@ a {
     // transition: all 0.2s ease;
     // -webkit-transition: all 0.2s ease;
   }
+}
+
+.blog-link-more {
+  a {
+    color: #8f8f8f;
+    font-weight: normal;
+  }
+  
+  float: right;
+  vertical-align: right;
 }
