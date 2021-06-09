@@ -1,7 +1,7 @@
 ---
 layout: subcategory
 key: college-soccer
-title: 大学足球院队
+title: 大学足球院队生涯
 title-img: assets/college-soccer/title-temp.png
 date: 2020-04-20
 description: |
