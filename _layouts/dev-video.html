@@ -3,6 +3,10 @@ layout: default
 ---
 
 {% include header.html %}
+{% assign page_cat = page.categories[0] %}
+
+{% assign c = site.games | where: "key", page_cat | first %}
+{% assign game_name = c.title %}
 <style>
   /* .responsive-video-container {
     position: relative;
@@ -39,7 +43,16 @@ layout: default
       <div class="mt-8"></div>
       <div class="columns negative-m-xl">
         <div class="column col-12">
-          
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="{{ '' | absolute_url }}">主页</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="{{ page_cat | absolute_url }}">{{ game_name }}</a>
+            </li>
+            <li class="breadcrumb-item">
+            </li>
+          </ul>
           <h2 class="text-light text-bold">{{ page.title }}</h2>
           <p class="text-light mb-0">{{ page.short-description }}</p>
         </div>

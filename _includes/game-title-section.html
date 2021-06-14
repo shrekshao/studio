@@ -38,15 +38,15 @@
     <br/>
 
   <div class="columns collections">
-    {% assign video_links = include.game_posts | where: "tag", "video" %}
-    {% for post in video_links %}
+    {% assign snapshots = include.game_posts | where: "tag", "snapshot" %}
+    {% for post in snapshots %}
     <div class="imgbox" style="max-width: 150px">
       <img src="{{ site.baseurl | append:post.img }}"/>
 
       {% if post.direct-link %}
       <a href="{{ post.direct-link }}" class="image-overlay"></a>
       {% else %}
-      <a href="{{ post.url }}" class="image-overlay"></a>
+      <a href="{{ site.baseurl | append:post.url }}" class="image-overlay"></a>
       {% endif %}
       <span href="{{ post.direct-link }}" class="image-overlay-text">{{post.title}}</span>
     </div>
