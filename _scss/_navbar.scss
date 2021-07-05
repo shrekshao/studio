@@ -21,20 +21,21 @@
 
 .main-nav {
   list-style-type: none;
-  display: none;
+  // display: none;
 }
 
 .nav-links {
   text-decoration: none;
-  font-weight: 700;
-  color: $white;
-  &.active {
-    color: $error;
-  }
+  font-weight: 700; 
+  // color: $white;
+  // &.active {
+  //   color: $error;
+  // }
 }
 
 .main-nav li {
-  text-align: center;
+  // text-align: center;
+  text-align: right;
   margin: 15px auto;
 }
 

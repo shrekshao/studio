@@ -3,12 +3,14 @@
 }
 
 .header-bg-img {
-  background-image: url("../assets/dawn.png");
+  background-image: url("../assets/backgrounf.png");
   background-color: $primary-color;
-  min-height: 340px;
-  // max-width: initial;
+  min-height: 585px;
+  max-height: initial;
   // background-size: contain;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
 }
 
 .nav-gradient {

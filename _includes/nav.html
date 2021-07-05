@@ -3,7 +3,7 @@
   <!-- <div class="flex-vertical-center"> -->
     <a style="width: 20%;" href="{{ site.url }}{{ site.baseurl }}" class="logo">
       <!-- <img style="max-width: 100%;" src="{{ site.baseurl }}/assets/{{ site.brand_logo }}"/> -->
-      <span style="color:#fffffe">shrekshao.com</span>
+      <span style="color:{{include.color}}">shrekshao.com</span>
     </a>
   </div>
   <ul class="main-nav">
@@ -31,7 +31,7 @@
 
     <li class="mx-4">
     <!-- <li> -->
-      <a  class="nav-links" href="{{ 'about' | absolute_url }}">关于</a>
+      <a  class="nav-links" href="{{ 'about' | absolute_url }}" style="color:{{include.color}}">关于</a>
     </li>
   </ul>
 </nav>
