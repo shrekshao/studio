@@ -9,4 +9,6 @@ img: assets/college-soccer/concept.png
 
 <!--more-->
 
-{% include imgdesc.html url="assets/blog/collegesoccer-scene-concept.png" %}
+{% include imgdesc.html url="assets/blog/cs/environment/collegesoccer-scene-concept.png" %}
+{% include imgdesc.html url="assets/blog/cs/environment/gate.png" %}
+{% include imgdesc.html url="assets/blog/cs/environment/sketch.jpg" %}

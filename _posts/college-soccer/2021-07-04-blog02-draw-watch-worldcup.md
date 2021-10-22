@@ -15,6 +15,6 @@ title: "【随手图】在球队活动室看世界杯"
 
 {% include imgdesc.html url="assets/blog/watch-worldcup.jpg" description="还是尝试画了一些细节的。你能看出哪些" %}
 
-{% include imgdesc.html url="assets/blog/210626.gif" description="最近的神奇宝贝对决式比赛gameplay的一点点进度（其实会比较像FC上的天使之翼吧）" %}
+{% include imgdesc.html url="assets/blog/cs/210626.gif" description="最近的神奇宝贝对决式比赛gameplay的一点点进度（其实会比较像FC上的天使之翼吧）" %}
 
 
