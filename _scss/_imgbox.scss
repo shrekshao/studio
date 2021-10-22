@@ -59,6 +59,7 @@ $global-transition: .35s;
     // img {
       .image-overlay-text {
         opacity: 1;
+        
         // width: 100%;
         // transition: all 0.4s ease;
         // -webkit-transition: all 0.4s ease;
@@ -134,5 +135,9 @@ $global-transition: .35s;
     -webkit-transition: all 0.4s ease;
     user-select: none;
     opacity: 0;
+  
+    text-overflow: clip;
+    white-space: nowrap;
+    overflow: hidden;
   }
 }

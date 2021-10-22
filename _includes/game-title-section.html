@@ -44,11 +44,12 @@
       <img src="{{ site.baseurl | append:post.img }}"/>
 
       {% if post.direct-link %}
-      <a href="{{ post.direct-link }}" class="image-overlay"></a>
+      <a href="{{ post.direct-link }}" class="image-overlay">
       {% else %}
-      <a href="{{ site.baseurl | append:post.url }}" class="image-overlay"></a>
+      <a href="{{ site.baseurl | append:post.url }}" class="image-overlay">
       {% endif %}
       <span href="{{ post.direct-link }}" class="image-overlay-text">{{post.title}}</span>
+      </a>
     </div>
     {% endfor %}
 
