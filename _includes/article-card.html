@@ -1,5 +1,9 @@
 <div class="column col-12">
-  <a href="{{ site.baseurl}}{{ post.url }}">
+  {% if post.direct-link %}
+  <a href="{{ post.direct-link }}">
+  {% else %}
+  <a href="{{ site.baseurl }}{{ post.url }}">
+  {% endif %}
     <div class="card card-link my-1" itemprop="blogPosts" itemscope="" itemtype="http://schema.org/BlogPosting">
       <div class="card-body">
         <div class="columns col-x-align">
@@ -21,7 +25,6 @@
                 <p class="text-dark text-small mb-0">Written by <span class="text-primary">{{ post_author.name }}</span></p>
               </div>
             </div>
-            {% else %}
             {% endif %}
            
           </div>
