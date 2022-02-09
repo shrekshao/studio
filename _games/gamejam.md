@@ -5,7 +5,7 @@ title: GameJam
 title-img: assets/gamejam/blocky.png
 date: 2018-12-31
 description: |
-    主要是两人合作的Lumdare Jam作品
+    我们参加的一些Lumdare, GGJ等Jam作品
 ---
 
-Mostly LumDare Jam projects
+Some LumDare and GGJ Jam projects
