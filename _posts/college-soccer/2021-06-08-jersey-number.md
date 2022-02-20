@@ -8,10 +8,9 @@ title: "【水技术】Unity自定义球衣和动态号码的实现"
 自定义球衣的实现，我感觉对于正常业界公司来说应该是个有很成熟解决方案的不是问题的问题。。。
 然而我并没有轻松在网上找到直接可以抄的。。。而且前后我其实做了三个方案才得到目前这个我觉得是比较通用的版本。。所以也许写一个小技术分享还是有点价值（虽然我只是又写不动代码了罢。。。）
 
+{% include imgdesc.html url="assets/blog/jersey-tech/jerseyeditor.gif" description="球衣编辑器" %}
 
 <!--more-->
-
-{% include imgdesc.html url="assets/blog/jersey-tech/jerseyeditor.gif" description="球衣编辑器" %}
 
 这里就直接介绍最后一个完善的方案了。它能够实现不需要与特定球衣mesh绑定的球衣贴图或自定义纹理+颜色；球衣/短裤号码；以及队徽/赞助商decal贴纸。基本无额外开销（仅对字体/队徽/赞助商纹理采样）
 

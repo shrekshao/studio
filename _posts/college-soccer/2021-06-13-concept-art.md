@@ -7,8 +7,10 @@ short-description: 怀老板的场景概念设计稿
 img: assets/college-soccer/concept.png
 ---
 
+{% include imgdesc.html url="assets/blog/cs/environment/collegesoccer-scene-concept.png" %}
+
+
 <!--more-->
 
-{% include imgdesc.html url="assets/blog/cs/environment/collegesoccer-scene-concept.png" %}
 {% include imgdesc.html url="assets/blog/cs/environment/gate.png" %}
 {% include imgdesc.html url="assets/blog/cs/environment/sketch.jpg" %}
