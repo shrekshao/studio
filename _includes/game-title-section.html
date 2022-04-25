@@ -22,7 +22,7 @@
 
   {% assign blogs = include.game_posts | where: "tag", "blog" %}
     {% for post in blogs %}
-    {% if forloop.index > 5 %}
+    {% if forloop.index > include.game.num-list-blogs %}
     <div class="blog-link-more">
       <a href="{{ include.key | absolute_url }}">更多...</a>
     </div>

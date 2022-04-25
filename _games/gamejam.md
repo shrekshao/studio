@@ -6,6 +6,7 @@ title-img: assets/gamejam/blocky.png
 date: 2018-12-31
 description: |
     我们参加的一些Lumdare, GGJ等Jam作品
+num-list-blogs: 3
 ---
 
 Some LumDare and GGJ Jam projects

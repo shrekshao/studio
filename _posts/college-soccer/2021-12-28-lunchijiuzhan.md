@@ -13,6 +13,9 @@ title: "论持久战"
 
 <!--more-->
 
-TODO
+{% include imgdesc.html url="assets/blog/cs/game-clip.gif" description="目前的gameplay概念" %}
+
+{% include imgdesc.html url="assets/blog/cs/keeper-save.gif" description="射门对决拼点后门将扑救动画" %}
+
 
 
