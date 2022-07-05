@@ -2,7 +2,7 @@
 layout: subcategory
 key: college-soccer
 title: 大学足球院队生涯
-title-img: assets/college-soccer/title-temp.png
+title-img: assets/college-soccer/title-temp-logo.png
 # title-img: assets/blog/cs/game-clip.gif
 date: 2021-05-15
 description: |
