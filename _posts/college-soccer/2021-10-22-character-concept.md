@@ -20,5 +20,6 @@ img: assets/college-soccer/character-concept.png
 {% include imgdesc.html url="assets/blog/cs/characters/6.png" description="2021-11-08, 15" %}
 {% include imgdesc.html url="assets/blog/cs/characters/7.png" description="2021-11-22, 29" %}
 {% include imgdesc.html url="assets/blog/cs/characters/8.png" description="2021-12-06, 13" %}
+{% include imgdesc.html url="assets/blog/cs/characters/9.png" description="2022-07-11, 18" %}
 
 这几个月一直都在做和改比赛的gameplay。。
